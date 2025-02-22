@@ -2,48 +2,52 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Potts Dog Park Sanctuary</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      position: relative;
+    }
+  </style>
 </head>
 
-<body>
+<!--scrollspy effect-->
+<body data-bs-toggle=".navbar" data-bs="50">
+  
    <!--logo-->
-   <nav class="navbar bg-body-tertiary">
+   <nav class="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/home/index.html">
-        <img src="/assets/logo.png" alt="Logo" class="rounded-0">
-        Potts Dog Park Sanctuary
+      <a class="navbar-brand" href="/index.html">
+        <h1 class="display-3 text-end"><img src="/assets/logo.png" alt="Logo" class="rounded-0">Potts Dog Park Sanctuary</h1>
       </a>
     </div>
   </nav>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-sm bg-success-subtle sticky-top">
     <div class="container-fluid">
-      <!--
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    -->
-      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="background-color:#66D977;">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-current="page">
+            <a class="nav-link dropdown-toggle" href="/index.html" role="button" data-bs-toggle="dropdown" aria-current="page">
               Home
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/home/#about">About Us</a></li>
-              <li><a class="dropdown-item" href="/home/#what_we_do">What We Do</a></li>
-              <li><a class="dropdown-item" href="/home/#around">Around Potts Dog Sanctuary</a></li>
+              <li><a class="dropdown-item" href="#about">About Us</a></li>
+              <li><a class="dropdown-item" href="#what_we_do">What We Do</a></li>
+              <li><a class="dropdown-item" href="#around">Around Potts Dog Sanctuary</a></li>
+              <li><a class="dropdown-item" href="#locationhours">Location & Hours</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/regulations/index.html">Regulations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/founder/index.html">Founder</a>
+            <a class="nav-link" href="/founder/#founder">Founder</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="/getinvolved/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,14 +58,18 @@
               <li><a class="dropdown-item" href="/getinvolved/#donate">Donate</a></li>
               <li><a class="dropdown-item" href="/getinvolved/#spread_the_word">Spread the Word</a></li>
             </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/index.html">Contact Us</a>
+            </li>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 <!--Home-->
-<div class="container-fluid">
-<h2>Dr. Harold Potts</h2>
+<!--Scrollspy effect-->
+<div id="founder" class="container-fluid text-center" style="padding: 100px 20px;">
+<a id="founder"><h1 class="display-1">Founder</h1></a>
 Dr. Potts is a retired veterinarian who has dedicated his life to the service of both animals and humans. After earning his DVM degree from Auburn University, he opened the Ruskin Animal Hospital and Cat Clinic in 1971.
 Dr. Potts philanthropy extends beyond animal care. He has been involved in providing meals and education for children in Haiti, assisting farmers with funds to grow and sell their crops, and supporting Smile Train, a nonprofit that provides free corrective surgery for children with cleft lips and palates.
 Dr. Potts dedication to service is evident in his belief that “the more you give generously from the heart, soulfully and without any intention of getting anything in return, it comes back to you many times over.”
