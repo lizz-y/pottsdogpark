@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Potts Dog Park Sanctuary</title>
+  <link rel="stylesheet" href="styles.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+  
+
   <style>
     body {
       position: relative;
     }
+
   </style>
 </head>
 
@@ -23,12 +23,12 @@
    <nav class="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">
-        <h1 class="display-3 text-end"><img src="/assets/logo.png" alt="Logo" class="rounded-0">Potts Dog Park Sanctuary</h1>
+        <h1 class="text-end-sm"><img src="/assets/logo.png" alt="Logo" class="rounded-0" height="160">Potts Dog Park Sanctuary</h1>
       </a>
     </div>
   </nav>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-sm bg-success-subtle sticky-top">
+  <nav class="navbar navbar-expand bg-success-subtle sticky-sm-top">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
@@ -69,76 +69,82 @@
 <!--Home-->
 <!--Scrollspy effect-->
 <div id="about" class="container-fluid text-center" style="padding: 100px 20px;">
-<a id="about"><h1 class="display-1">About Us</h1></a>
-<p>Welcome to Pott's Off-Leash Dog Sanctuary, a non-profit organization created by a love for dogs and a vision to provide excellence in canine recreation.</p>
-<p>-Pott's Dog Sanctuary is not for sale.  In fact, it is being legally restructured to become a permanent fixture in our community.</p>
+<a id="about"><h1 class="display-1 fw-bold">About Us</h1></a>
+<p class="" style="padding: 50px">Welcome to Pott's Off-Leash Dog Sanctuary, a non-profit organization created by a love for dogs and a vision to provide excellence in canine recreation.</p>
+<p class="fst-italic" style="padding: 5px;">-Pott's Dog Sanctuary is not for sale.  In fact, it is being legally restructured to become a permanent fixture in our community.</p>
 </div>
 
-<div id="what_we_do" class="container-fluid text-center" style="padding: 100px 20px;">
-  <a id="what_we_do"><h3 class="display-1">What We Do</h3></a>
-  <p>Dr. Potts, along with a dedicated team of volunteers is working to maintain and improve the facilities.</p> 
-  <p>We are committed to creating a safe, clean, and fun environment for dogs and their owners.</p>
+<div id="what_we_do" class="container-fluid text-center bg-info-subtle" style="padding: 100px 20px;">
+  <a id="what_we_do"><h3 class="display-1 fw-bold">What We Do</h3></a>
+  <p style="padding: 50px">Dr. Potts, along with a dedicated team of volunteers is working to maintain and improve the facilities. We are committed to creating a safe, clean, and fun environment for dogs and their owners.</p>
   </div>
 
 <!--Carousel-->
 <div id="around" class="container-fluid text-center" style="padding: 100px 20px;">
-<a id="around"><h3 class="display-1">Around the Potts Dog Sanctuary</h3></a>
-
+<a id="around"><h3 class="display-1 fw-bold">Around the Potts Dog Sanctuary</h3></a>
 <div class="container p-5">
-<div id="pottsdogpark" class="carousel slide" data-bs-ride="carousel">
+<div id="pottsdogparkimages" class="carousel slide" data-bs-ride="carousel">
  <!-- Indicators/dots -->
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#pottsdogpark" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#pottsdogpark" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#pottsdogpark" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#pottsdogparkimages" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#pottsdogparkimages" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#pottsdogparkimages" data-bs-slide-to="2"></button>
   </div>
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/assets/3_dogs_at_potts.png" alt="dogs on the swings" class="d-block w-100">
+      <img src="/assets/3_dogs_at_potts.png" alt="three dogs at potts" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="/assets/owner_1dog.png" alt="" class="d-block w-100">
+      <img src="/assets/owner_2dogs.png" alt="dogs with owner" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="/assets/pup_at_potts.png" alt="dog picnic" class="d-block w-100">
+      <img src="/assets/owner_and_dog_at_potts.png" img alt="woman holding dog" class="d-block w-100">
     </div>
   </div>
   <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#pottsdogpark" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#pottsdogparkimages" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#pottsdogpark" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#pottsdogparkimages" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
 </div>
 </div>
 
-<div class="container-fluid text-center" style="padding: 100px 20px;">
-<h3 class="display-1">Enjoy Your Visit</h3>
-<p>Please familiarize yourself with the rules outlined in the <a href="/regulations/#regulations">Regulations</a> Section to ensure a safe and enjoyable experience for all visitors.</p>
-<p>The Sanctuary takes these rules seriously, and enforces them for the safety of both dogs and their owners.</p>
+
+<!--Video-->
+<div class="container-fluid-sm" style="padding: 100px 50px;">
+  <video width="520" height="250">
+    <source src="/assets/video_3dogs_tub.mp4" type="video/mp4"></video>
 </div>
 
-
-  <!--Location-->
-<div id="locationhours" class="container-fluid text-center" style="padding: 100px 20px;">
-<a id="locationhours"><h3 class="display-1">Location & Hours</h3></a>
-<p>2103 Third Ave. SE, Ruskin Florida 33570</p>
+<!--Location-->
+<div id="locationhours" class="container-fluid text-center bg-success-subtle" style="padding: 100px 20px;">
+<a id="locationhours"><h3 class="display-1 fw-bold">Location & Hours</h3></a>
+<p class="fst-italic" style="padding: 50px;">2103 Third Ave. SE, Ruskin Florida 33570</p>
 <p>Hours: Wednesday through Sunday 7:30am to Sunset (closed Monday & Tuesday)</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.038160553301!2d-82.40839442574556!3d27.716108025107218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c327f5f15d4533%3A0xb99b383033c6a6e2!2s2103%203rd%20Ave%20SE%2C%20Ruskin%2C%20FL%2033570!5e0!3m2!1sen!2sus!4v1739065313210!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="container-fluid-sm text-center" style="padding: 100px 50px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.038160553301!2d-82.40839442574556!3d27.716108025107218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c327f5f15d4533%3A0xb99b383033c6a6e2!2s2103%203rd%20Ave%20SE%2C%20Ruskin%2C%20FL%2033570!5e0!3m2!1sen!2sus!4v1739065313210!5m2!1sen!2sus" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 </div>
 
-<!--footer
-<div class="container-fluid">
-  <nav class="navbar navbar-expand-lg bg-dark">
+<div class="container-fluid-sm text-center bg-light" style="padding: 100px 20px;">
+  <h3 class="display-1 fw-bold">Enjoy Your Visit</h3>
+  <p style="padding: 50px;">Please familiarize yourself with the rules outlined in the <a href="/regulations/#regulations">Regulations</a> Section to ensure a safe and enjoyable experience for all visitors.</p>
+  <p class="fw-bold fst-italic">The Sanctuary takes these rules seriously, and enforces them for the safety of both dogs and their owners.</p>
+  </div>
+
+<footer>
+  <nav class="navbar navbar-expand-sm bg-dark text-white">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <p style="text-align: center;">Copyright 2025</p>
     </div>
   </nav>
 </div>
--->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Potts Dog Park Sanctuary</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+
+  <link rel="stylesheet" href="styles.css"/>
   <style>
     body {
       position: relative;
@@ -23,12 +21,12 @@
    <nav class="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">
-        <h1 class="display-3 text-end"><img src="/assets/logo.png" alt="Logo" class="rounded-0">Potts Dog Park Sanctuary</h1>
+        <h1 class="text-end-sm"><img src="/assets/logo.png" alt="Logo" class="rounded-0" height="160">Potts Dog Park Sanctuary</h1>
       </a>
     </div>
   </nav>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-sm bg-success-subtle sticky-top">
+  <nav class="navbar navbar-expand bg-success-subtle sticky-sm-top">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
@@ -68,21 +66,65 @@
   </nav>
 <!--Home-->
 <!--Scrollspy effect-->
-<div id="regulations" class="container-fluid text-center" style="padding: 100px 20px;">
-<a id="regulations"><h1 class="display-1">Regulations</h1></a>
-Neutering/Spaying: All dogs must be neutered or spayed to enter the park.
-Behavior: Aggressive dogs are not allowed. Dogs must be removed at the first sign of over-aggressive behavior to other dogs or humans.
-Collars: All dogs must wear a collar in the park at all times. Choke collars or prong collars are not permitted.
-Vaccinations: Dogs must have a current license tag and be immunized against rabies, distemper, bordetella, and leptospirosis.
-Cleanliness: Dog feces/waste must be picked up immediately and placed in containers provided. Disposal bags are available.
-Dog Limit: No more than three (3) dogs per handler per visit.
-Handler Presence: Dog handlers must be present in sight and voice control of their dog(s) at all times.
-Leash Rules: All dogs within the fenced area must be off-leash.
-Food and Drink: No food or alcoholic beverages are allowed.
-Children: Children under the age of 16 must be under the direct supervision of an adult.
-Environment: Holes dug by your dog must immediately be filled and covered up.
-Please follow these rules to ensure the safety and enjoyment of all park visitors, both human and canine.
+
+<div class="grid text-center bg-light" style="--bs-columns: 3;">
+  <div>
+    <div id="regulations" class="container-fluid text-center" style="padding: 100px 20px;">
+    <a id="regulations"><h1 class="display-1 fw-bold">Regulations</h1></a>
+    <div class="grid" style="padding: 50px;">
+      <div>
+        <h2>Neutering/Spaying:</h2>
+        <p>All dogs must be neutered or spayed to enter the park.</p></div>
+      <div>
+        <h2>Behavior:</h2>
+        <p>Aggressive dogs are not allowed. Dogs must be removed at the first sign of over-aggressive behavior to other dogs or humans.
+        All dogs must wear a collar in the park at all times. Choke collars or prong collars are not permitted.</p>
+      </div>
+      <div>
+        <h2>Vaccinations:</h2>
+        <p>Dogs must have a current license tag and be immunized against rabies, distemper, bordetella, and leptospirosis.</p>
+      </div>
+      <div>
+        <h2>Cleanliness:</h2>
+        <p>Dog feces/waste must be picked up immediately and placed in containers provided. Disposal bags are available.</p>
+      </div>
+      <div>
+        <h2>Dog Limit:</h2>
+        <p>No more than three (3) dogs per handler per visit.</p>
+      </div>
+      <div>
+        <h2>Handler Presence:</h2> 
+        <p>Dog handlers must be present in sight and voice control of their dog(s) at all times.</p>
+      </div>
+      <div>
+        <h2>Rules:</h2>
+        <p>All dogs within the fenced area must be off-leash.</p>
+      </div>
+      <div>
+        <h2>Food and Drink:</h2>
+        <p>No food or alcoholic beverages are allowed.</p>
+      </div>
+      <div>
+        <h2>Children:</h2>
+        <p>Children under the age of 16 must be under the direct supervision of an adult.</p>
+      </div>
+      <div>
+        <h2>Environment:</h2>
+        <p>Holes dug by your dog must immediately be filled and covered up.
+        Please follow these rules to ensure the safety and enjoyment of all park visitors, both human and canine.</p>
+      </div>
+    </div>
+  </div>
 </div>
+
+<footer>
+  <nav class="navbar navbar-expand-sm bg-dark text-white">
+    <div class="container-fluid">
+    <p style="text-align: center;">Copyright 2025</p>
+    </div>
+  </nav>
+</div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
